@@ -103,6 +103,13 @@
             padding: 1.5rem;
             border-radius: 8px;
             border-left: 4px solid #dc2626;
+            height: auto;
+            /* Membuat container menyesuaikan dengan konten */
+            min-height: 150px;
+            /* Menyediakan ruang minimal */
+            display: flex;
+            flex-direction: column;
+            /* Mengatur elemen secara vertikal */
         }
 
         .rental-terms h3 {
@@ -121,6 +128,26 @@
         .rental-terms li {
             margin-bottom: 0.5rem;
         }
+
+        .bg-yellow-50 {
+            background-color: #fef3c7;
+        }
+
+        .border-l-4 {
+            border-left-width: 4px;
+        }
+
+        .border-yellow-400 {
+            border-color: #fbbf24;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .rounded {
+            border-radius: 8px;
+        }
     </style>
 </head>
 
@@ -135,17 +162,20 @@
                     @csrf
                     <div class="form-group">
                         <label class="form-label">Nama Lengkap</label>
-                        <input type="text" class="form-input" id="namaLengkap" name="full_name" placeholder="Masukkan nama lengkap Anda" required>
+                        <input type="text" class="form-input" id="namaLengkap" name="full_name"
+                            placeholder="Masukkan nama lengkap Anda" required>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="form-group">
                             <label class="form-label">No. Handphone</label>
-                            <input type="tel" class="form-input" id="noHandphone" name="phone_number" placeholder="08xxxxxxxxx" required>
+                            <input type="tel" class="form-input" id="noHandphone" name="phone_number"
+                                placeholder="08xxxxxxxxx" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Alamat</label>
-                            <input type="text" class="form-input" id="alamat" name="address" placeholder="Alamat lengkap" required>
+                            <input type="text" class="form-input" id="alamat" name="address"
+                                placeholder="Alamat lengkap" required>
                         </div>
                     </div>
 
@@ -184,18 +214,21 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Tanggal Pengembalian</label>
-                            <input type="date" class="form-input" id="tanggalPengembalian" name="return_date" required>
+                            <input type="date" class="form-input" id="tanggalPengembalian" name="return_date"
+                                required>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="form-group">
                             <label class="form-label">Lokasi Antar</label>
-                            <input type="text" class="form-input" id="lokasiAntar" name="delivery_location" placeholder="Lokasi pengantaran">
+                            <input type="text" class="form-input" id="lokasiAntar" name="delivery_location"
+                                placeholder="Lokasi pengantaran">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Lokasi Pengembalian</label>
-                            <input type="text" class="form-input" id="lokasiPengembalian" name="return_location" placeholder="Lokasi pengembalian">
+                            <input type="text" class="form-input" id="lokasiPengembalian" name="return_location"
+                                placeholder="Lokasi pengembalian">
                         </div>
                     </div>
 
@@ -212,7 +245,8 @@
 
                     <div class="form-group">
                         <label class="form-label">Catatan Khusus</label>
-                        <textarea class="form-textarea" id="catatanKhusus" name="special_notes" placeholder="Tuliskan catatan khusus jika ada..."></textarea>
+                        <textarea class="form-textarea" id="catatanKhusus" name="special_notes"
+                            placeholder="Tuliskan catatan khusus jika ada..."></textarea>
                     </div>
 
                     <div class="text-center">
