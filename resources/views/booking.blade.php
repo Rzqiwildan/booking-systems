@@ -152,6 +152,16 @@
 </head>
 
 <body class="bg-gray-50 min-h-screen py-8">
+    <nav class="bg-red-600 py-4 px-6">
+        <div class="flex justify-between items-center">
+            <a href="/" class="text-white text-2xl font-semibold">Arfa Indonesia</a>
+            <div>
+                <!-- Button to Login Page -->
+                <a href="{{ route('filament.auth.login') }}"
+                    class="text-white font-semibold px-4 py-2 bg-blue-600 rounded hover:bg-blue-700">Login Admin</a>
+            </div>
+        </div>
+    </nav>
     <div class="container mx-auto px-4 max-w-6xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Formulir Pemesanan -->
