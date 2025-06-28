@@ -11,9 +11,9 @@ class AdminFilamentSeeder extends Seeder
     {
         // Membuat akun admin untuk Filament
         User::create([
-            'name' => 'Admin Filament',
-            'email' => 'admin@example.com',  // Ganti dengan email admin Anda
-            'password' => Hash::make('password123'),  // Ganti dengan password yang aman
+            'name' => 'ArfaIndonesia',
+            'email' => 'arfatransportasi@gmail.com',  // Ganti dengan email admin Anda
+            'password' => Hash::make('Perhatian01'),  // Ganti dengan password yang aman
         ]);
     }
 }
